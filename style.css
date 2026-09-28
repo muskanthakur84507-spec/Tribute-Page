@@ -1,0 +1,284 @@
+```css
+/* ===== General ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff8f0;
+    color: #3b2720;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+
+/* ===== Hero Section ===== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(55, 25, 15, 0.65),
+            rgba(55, 25, 15, 0.65)
+        ),
+        url("https://upload.wikimedia.org/wikipedia/commons/5/5d/Rani_of_Jhansi.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    color: white;
+    padding: 30px;
+}
+
+.small-title {
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 8px #000;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #c47b36;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #9d5720;
+    transform: translateY(-3px);
+}
+
+
+/* ===== Headings ===== */
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #71351e;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #c47b36;
+    margin: 12px auto;
+    border-radius: 5px;
+}
+
+
+/* ===== About Section ===== */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-box {
+    flex: 1;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.about-text {
+    flex: 1;
+    font-size: 18px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+
+/* ===== Events ===== */
+
+.events {
+    padding: 80px 0;
+    background: #f4e3d2;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+    border-left: 4px solid #c47b36;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #c47b36;
+    border-radius: 50%;
+    left: -40px;
+    top: 30px;
+}
+
+.timeline-item span {
+    color: #a35422;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.timeline-item h3 {
+    margin: 5px 0;
+    color: #71351e;
+}
+
+
+/* ===== Legacy Cards ===== */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #71351e;
+    margin-bottom: 10px;
+}
+
+
+/* ===== Quote ===== */
+
+.quote-section {
+    padding: 90px 20px;
+    text-align: center;
+    background: #71351e;
+    color: white;
+}
+
+blockquote {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.quote-section p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2d1912;
+    color: white;
+}
+
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    blockquote {
+        font-size: 22px;
+    }
+}
+```
+
